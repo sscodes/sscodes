@@ -1,16 +1,25 @@
-export const metadata = {
-  title: 'sscodes',
-  description: 'portfolio website of Sanket Sarkar',
-}
+import Header from '@/components/Header/Header';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: {
+    default: 'sscodes',
+    template: '%s | sscodes',
+  },
+  description: 'Portfolio website of Sanket Sarkar (sscodes)',
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang='en'>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
-  )
+  );
 }

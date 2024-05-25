@@ -1,16 +1,11 @@
 import React from 'react';
-import { PT_Mono } from 'next/font/google';
 import ToggleButton from '../ToggleButton/ToggleButton';
 import styles from '../Header/Header.module.css';
-
-const pt_mono = PT_Mono({
-  subsets: ['latin'],
-  weight: '400',
-});
+import { pt_mono_400 } from '@/helpers/Fonts';
 
 const Header = () => {
   return (
-    <nav className={`${pt_mono.className} grid grid-cols-6 h-24`}>
+    <nav className={`${pt_mono_400.className} grid grid-cols-6 ${styles.header} text-lg`}>
       <div></div>
       <div className='grid col-span-2 border-b-2 border-b-stone-400'>
         <div className='flex xl:ml-7 items-center font-bold text-4xl'>

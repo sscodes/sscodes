@@ -1,5 +1,6 @@
 import Header from '@/components/Header/Header';
 import { Metadata } from 'next';
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
@@ -16,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body>
+      <body className='bg-stone-100'>
         <Header />
         {children}
       </body>

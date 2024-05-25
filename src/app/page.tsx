@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Home from './_home/page';
+import Sidebar from '@/components/Sidebar/Sidebar';
 
 export const metadata: Metadata = {
   description: 'Home page of portfolio website of Sanket Sarkar (sscodes)',
@@ -7,8 +8,9 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <div>
+    <div className='relative'>
       <Home />
+      {/* <Sidebar /> */}
     </div>
   );
 };

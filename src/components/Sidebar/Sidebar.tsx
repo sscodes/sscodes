@@ -4,7 +4,7 @@ import sidebarStyles from './Sidebar.module.css';
 const Sidebar = () => {
   return (
     <div
-      className={`flex justify-center items-center w-screen h-screen z-40 bg-stone-100 absolute top-0 ${sidebarStyles.sidebar}`}
+      className={`flex justify-center items-center w-screen h-screen z-40 bg-stone-100 absolute top-0 ${sidebarStyles.sidebar} ${sidebarStyles.animateRight}`}
     >
       <div className='flex flex-col gap-24'>
         <NavElements />

@@ -16,7 +16,7 @@ const SocialMedia = () => {
       <Link href='https://www.linkedin.com/in/sscodes/' target='_blank'>
         <FiLinkedin className='cursor-pointer hover:text-sky-700' />
       </Link>
-      <Link href='https://github.dev/sscodes/' target='_blank'>
+      <Link href='https://github.com/sscodes/' target='_blank'>
         <FiGithub className='cursor-pointer hover:text-slate-700' />
       </Link>
       <Link href='https://www.instagram.com/shawwnket.arts/' target='_blank'>

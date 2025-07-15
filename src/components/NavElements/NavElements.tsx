@@ -8,7 +8,7 @@ const NavElements = () => {
       <div className='flex justify-center items-center'>
         <Link
           href='/projects'
-          className='cursor-pointer text-2xl xl:text-base hover:text-sky-700'
+          className='cursor-pointer text-2xl xl:text-base xl:font-bold hover:text-sky-700'
         >
           Projects
         </Link>
@@ -16,7 +16,7 @@ const NavElements = () => {
       <div className='flex justify-center items-center'>
         <Link
           href='/blogs'
-          className='cursor-pointer text-2xl xl:text-base hover:text-sky-700'
+          className='cursor-pointer text-2xl xl:text-base xl:font-bold hover:text-sky-700'
         >
           Blogs
         </Link>
@@ -24,7 +24,7 @@ const NavElements = () => {
       <div className='flex justify-center items-center'>
         <Link
           href='/illustrations'
-          className='cursor-pointer text-2xl xl:text-base hover:text-sky-700'
+          className='cursor-pointer text-2xl xl:text-base xl:font-bold hover:text-sky-700'
         >
           Illustrations
         </Link>
@@ -32,7 +32,7 @@ const NavElements = () => {
       <div className='flex justify-center items-center'>
         <Link
           href='/resume'
-          className='cursor-pointer text-2xl xl:text-base hover:text-sky-700'
+          className='cursor-pointer text-2xl xl:text-base xl:font-bold hover:text-sky-700'
         >
           Resume
         </Link>

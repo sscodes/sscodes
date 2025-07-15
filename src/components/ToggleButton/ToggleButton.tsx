@@ -2,10 +2,10 @@ import styles from './ToggleButton.module.css';
 
 const ToggleButton = () => {
   return (
-    <label className={styles.switch}>
+    <div className={styles.toggle}>
       <input type='checkbox' />
-      <span className={`${styles.slider} ${styles.round}`}></span>
-    </label>
+      <label></label>
+    </div>
   );
 };
 

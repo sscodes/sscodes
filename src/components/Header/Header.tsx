@@ -20,7 +20,7 @@ const Header = () => {
       <div className='hidden lg:grid lg:col-span-4 2xl:col-span-2 grid-cols-6 border-b-2 border-b-stone-400'>
         <NavElements />
       </div>
-      <div className='border-b-2 border-b-stone-400 lg:border-0 2xl:col-span-1 flex justify-center align-middle'>
+      <div className='border-b-2 border-b-stone-400 lg:hidden 2xl:flex 2xl:col-span-1 items-center justify-center'>
         <NavigationDrawer />
       </div>
     </nav>

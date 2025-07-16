@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
-import Home from './_home/page';
-import Sidebar from '@/components/Sidebar/Sidebar';
+import Home from '@/components/home/page';
 
 export const metadata: Metadata = {
   description: 'Home page of portfolio website of Sanket Sarkar (sscodes)',
@@ -10,7 +9,6 @@ const page = () => {
   return (
     <div className='relative'>
       <Home />
-      {/* <Sidebar /> */}
     </div>
   );
 };

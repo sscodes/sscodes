@@ -21,7 +21,7 @@ export function NavigationDrawer() {
     { href: '/', label: 'Home' },
     { href: '/blogs', label: 'Blogs' },
     { href: '/projects', label: 'Projects' },
-    { href: '/', label: 'Resume' },
+    { href: '/resume.pdf', label: 'Resume' },
   ];
 
   // const socialLinks = [

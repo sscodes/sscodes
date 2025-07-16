@@ -7,6 +7,14 @@ const NavElements = () => {
     <>
       <div className='flex justify-center items-center'>
         <Link
+          href='/experience'
+          className='cursor-pointer lg:text-base lg:font-bold hover:text-sky-700'
+        >
+          Experience
+        </Link>
+      </div>
+      <div className='flex justify-center items-center'>
+        <Link
           href='/projects'
           className='cursor-pointer lg:text-base lg:font-bold hover:text-sky-700'
         >
@@ -23,18 +31,20 @@ const NavElements = () => {
       </div>
       <div className='flex justify-center items-center'>
         <Link
-          href='/illustrations'
+          href='/resume.pdf'
+          target='_blank'
           className='cursor-pointer lg:text-base lg:font-bold hover:text-sky-700'
         >
-          Illustrations
+          Resume
         </Link>
       </div>
       <div className='flex justify-center items-center'>
         <Link
-          href='/resume'
+          href='/contact'
+          target='_blank'
           className='cursor-pointer lg:text-base lg:font-bold hover:text-sky-700'
         >
-          Resume
+          Contact
         </Link>
       </div>
       <div className={`flex justify-center items-center ${headerStyles.neo}`}>

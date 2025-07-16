@@ -1,3 +1,4 @@
+// src/app/layout.tsx
 import Header from '@/components/Header/Header';
 import { Metadata } from 'next';
 import './globals.css';
@@ -16,8 +17,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
-      <body className='bg-stone-100'>
+    <html lang='en' suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                const savedTheme = localStorage.getItem('theme');
+                if (savedTheme === 'dark' || 
+                    (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                  document.documentElement.classList.add('dark');
+                }
+              } catch {}
+            `,
+          }}
+        />
+      </head>
+      <body className='bg-background text-foreground'>
         <Header />
         {children}
       </body>
